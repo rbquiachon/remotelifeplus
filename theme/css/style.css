@@ -9446,6 +9446,9 @@
    border-radius: 8px;
    color: #f8e494;
    background-color: rgba(248, 228, 148, 0.2);
+   animation: swing ease-in-out 8s infinite alternate;
+   transform-origin: center -50px;
+
  }
  .service-item .service-title {
    transition: color 0.3s;
