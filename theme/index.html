@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Remote Life Plus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Themefisher">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- navigation -->
+<header class="navigation">
+	<nav class="navbar navbar-expand-xl navbar-dark text-center py-3">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/logo.png" alt="Wallet">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="how-it-works.html">How It Works</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="services.html">Services</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- account btn --> <a href="#!" class="btn btn-outline-secondary border">Log In</a>
+				<!-- account btn --> <a href="signup.html" class="btn btn-secondary border ms-2 ms-lg-3">Sign Up</a>
+			</div>
+		</div>
+	</nav>
+</header>
+<!-- /navigation -->
+
+<div class="modal applyLoanModal fade" id="applyLoan" tabindex="-1" aria-labelledby="applyLoanLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h4 class="modal-title" id="exampleModalLabel">Start Your Free Trial</h4>
+        <button type="button" class="btn-outline" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#!" method="post">
+          <div class="row">
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_amount" class="form-label">Part-Time/Full-Time</label>
+                <input type="number" class="form-control shadow-none" id="loan_amount" placeholder="ex: 25000">
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_how_long_for" class="form-label">How long for?</label>
+                <input type="number" class="form-control shadow-none" id="loan_how_long_for" placeholder="ex: 12">
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_repayment" class="form-label">Repayment</label>
+                <input type="number" class="form-control shadow-none" id="loan_repayment" disabled>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_full_name" class="form-label">Full Name</label>
+                <input type="text" class="form-control shadow-none" id="loan_full_name">
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_email_address" class="form-label">Business Email Address</label>
+                <input type="email" class="form-control shadow-none" id="loan_email_address">
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button type="submit" class="btn btn-primary w-100">Start your free trial now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="banner position-relative overflow-hidden">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="block text-center text-lg-start pe-0 pe-xl-5">
+          <h1 class="text-capitalize mb-4 text-primary">maximize your productivity by hiring a virtual assistant</h1>
+          <p class="mb-4">We have a Team of Virtual Assistants who are ready to assist you. We will match you with a skilled VA experienced in making you achieve your goals and set you up for success.</p> <a type="button"
+            class="btn btn-secondary border" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Start Free Trial Now <span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span></a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="ps-lg-5 text-center">
+          <img loading="lazy" decoding="async"
+            src="images/banner/banner.png"
+            alt="banner image" class="w-160">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="has-shapes">
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-6">
+        <div class="section-title pt-4">
+          <h1 class="text-primary text-uppercase text-center fw-bold mb-3">Remote Life Pricing</h1>
+          <p class="text-center" >Remote Life Pricing</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 service-item">
+        <a class="text-white" href="service-details.html">
+          <div class="block"> <span class="colored-box text-center h3 mb-4">01</span>
+            <h3 class="mb-3 service-title text-light">Part-Time Virtual Assistant</h3>
+            <p class="mb-0 service-description">$499/Month</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 service-item">
+        <a class="text-white" href="service-details.html">
+          <div class="block"> <span class="colored-box text-center h3 mb-4">02</span>
+            <h3 class="mb-3 service-title text-light">Full-Time Virtual Assistant</h3>
+            <p class="mb-0 service-description">$799/Month</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 service-item">
+        <a class="text-white" href="service-details.html">
+          <div class="block"> <span class="colored-box text-center h3 mb-4">
+
+
+              03
+
+            </span>
+            <h3 class="mb-3 service-title text-light">Customer Service Representative</h3>
+            <p class="mb-0 service-description">Contact Us for Pricing</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="homepage_tab position-relative">
+  <h1 class="text-primary text-center">Our Services</h1>
+  <ul class="payment_info_tab nav nav-pills justify-content-center payment_info_tab_hover" id="pills-tab" role="tablist">
+    <li class="nav-item m-2" role="presentation"> <a
+        class="nav-link btn btn-outlined-secondary border effect-none text-primary active" id="pills-how-much-can-i-recive-tab"
+        data-bs-toggle="pill" href="#pills-how-much-can-i-recive" role="tab"
+        aria-controls="pills-how-much-can-i-recive" aria-selected="true">Part-Time Virtual Assistant</a>
+    </li>
+    <li class="nav-item m-2" role="presentation"> <a
+        class="nav-link btn btn-outlined-secondary border effect-none text-primary " id="pills-how-much-does-it-costs-tab"
+        data-bs-toggle="pill" href="#pills-how-much-does-it-costs" role="tab"
+        aria-controls="pills-how-much-does-it-costs" aria-selected="true">Full-Time Virtual Assistant</a>
+    </li>
+    <li class="nav-item m-2" role="presentation"> <a
+        class="nav-link btn btn-outlined-secondary border effect-none text-primary " id="pills-how-do-i-repay-tab"
+        data-bs-toggle="pill" href="#pills-how-do-i-repay" role="tab" aria-controls="pills-how-do-i-repay"
+        aria-selected="true">Customer Service Representative</a>
+    </li>
+  </ul>
+ 
+<div class="section container">
+      <!-- <div class="col-lg-10"> -->
+        <div class="rounded shadow bg-dark p-5 tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-how-much-can-i-recive" role="tabpanel"
+            aria-labelledby="pills-how-much-can-i-recive-tab">
+            <div class="row align-items-center">
+              <div class="col-md-6 order-1 order-md-0">
+                <div class="content-block">
+                  <h3 class="mb-1 text-light">Part-Time Virtual Assistant</h3>
+                  <div class="content">
+                    <p>4 Hours/Day, Mon-Fri</p>
+                    <p>Our Virtual Assistants can help</p>
+                    <ul>
+                      <li>Schedule meetings and manage calendars</li>
+                      <li>Answer phone calls and emails and take messages</li>
+                      <li>Take accurate and comprehensive notes at meetings</li>
+                      <li>Help with daily time management</li>
+                      <li>Plan travel, including flights, accommodation and ground transportation</li>
+                      <li>Coordinate events and speaking engagements</li>
+                      <li>Draft correspondence such as emails and letters</li>
+                      <li>Data Entry, Mining and Data Scrapping</li>
+                      <li>Lead Generation, Web Research and Data Extraction</li>
+                      <li>Long Term Administrative Tasks</li>
+                      <li>Handle Inbound/Outbound Calls</li>
+                      <li>Run errands as requested</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 order-0 order-md-1 mb-5 mt-md-0">
+                <div class="image-block text-center">
+                  <img loading="lazy" decoding="async"
+                    src="images/payment-info.png" alt="How Much Can I Recive?" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade " id="pills-how-much-does-it-costs" role="tabpanel"
+            aria-labelledby="pills-how-much-does-it-costs-tab">
+            <div class="row align-items-center">
+              <div class="col-md-6 order-1 order-md-0">
+                <div class="content-block">
+                  <h3 class="mb-4 text-light">Full-Time Virtual Assistant</h3>
+                  <div class="content">
+                    <p>8 Hours/Day, Mon-Fri</p>
+                    <p>Our Virtual Assistants can help</p>
+                    <ul>
+                      <li>Schedule meetings and manage calendars</li>
+                      <li>Answer phone calls and emails and take messages</li>
+                      <li>Take accurate and comprehensive notes at meetings</li>
+                      <li>Help with daily time management</li>
+                      <li>Plan travel, including flights, accommodation and ground transportation</li>
+                      <li>Coordinate events and speaking engagements</li>
+                      <li>Draft correspondence such as emails and letters</li>
+                      <li>Data Entry, Mining and Data Scrapping</li>
+                      <li>Lead Generation, Web Research and Data Extraction</li>
+                      <li>Long Term Administrative Tasks</li>
+                      <li>Handle Inbound/Outbound Calls</li>
+                      <li>Run errands as requested</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 order-0 order-md-1 mb-5 mt-md-0">
+                <div class="image-block text-center">
+                  <img loading="lazy" decoding="async" src="images/illustration-2.png" alt="How Much Does It Costs?" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade " id="pills-how-do-i-repay" role="tabpanel"
+            aria-labelledby="pills-how-do-i-repay-tab">
+            <div class="row align-items-center">
+              <div class="col-md-6 order-1 order-md-0">
+                <div class="content-block">
+                  <h3 class="mb-4 text-light">Customer Service Representative</h3>
+                  <div class="content">
+                    <p>8 Hours/Day</p>
+                    <p>turpis vivamus donec. Id congue vesti bualum odio dignissim at quisque viverra. Non semper in sed
+                      quisque dui. Platea posuere ullamcorper id fames ut sed urna cursus eget. Neque, vel</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 order-0 order-md-1 mb-5 mt-md-0">
+                <div class="image-block text-center">
+                  <img loading="lazy" decoding="async" src="images/illustration-1.png" alt="How Do I Repay?" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+    <div class="has-shapes">
+     
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="section-title text-center mb-5 pb-2">
+          <h1 class="text-primary text-uppercase fw-bold mb-3">Questions You Have</h1>
+          <h1 class="text-primary">Frequently Asked Questions</h1>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="accordion shadow rounded py-5 px-0 px-lg-4 bg-dark position-relative" id="accordionFAQ">
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 text-light active"
+              id="heading-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" aria-expanded="true"
+              aria-controls="collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9">Can I apply if my credit isn&rsquo;t
+              perfect?
+            </h2>
+            <div id="collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9"
+              class="accordion-collapse collapse border-0 show"
+              aria-labelledby="heading-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">The difference between and premium product consist number of
+                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
+            </div>
+          </div>
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 text-light"
+              id="heading-a443e01b4db47b3f4a1267e10594576d52730ec1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-a443e01b4db47b3f4a1267e10594576d52730ec1" aria-expanded="false"
+              aria-controls="collapse-a443e01b4db47b3f4a1267e10594576d52730ec1">How do I know that I have been
+              approved?
+            </h2>
+            <div id="collapse-a443e01b4db47b3f4a1267e10594576d52730ec1" class="accordion-collapse collapse border-0 "
+              aria-labelledby="heading-a443e01b4db47b3f4a1267e10594576d52730ec1" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">The difference between and premium product consist number of
+                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
+            </div>
+          </div>
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 text-light"
+              id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd" aria-expanded="false"
+              aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd">Do I need to fax or email any
+              documents?
+            </h2>
+            <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd" class="accordion-collapse collapse border-0 "
+              aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">The difference between and premium product consist number of
+                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
+            </div>
+          </div>
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 text-light"
+              id="heading-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" aria-expanded="false"
+              aria-controls="collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3">Do you provide loans to military
+              personnel?
+            </h2>
+            <div id="collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" class="accordion-collapse collapse border-0 "
+              aria-labelledby="heading-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">The difference between and premium product consist number of
+                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
+            </div>
+          </div>
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 text-light"
+              id="heading-0c2f829793a1f0562fea97120357dd2d43319164" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-0c2f829793a1f0562fea97120357dd2d43319164" aria-expanded="false"
+              aria-controls="collapse-0c2f829793a1f0562fea97120357dd2d43319164">Can I remove footer credit purchase ?
+            </h2>
+            <div id="collapse-0c2f829793a1f0562fea97120357dd2d43319164" class="accordion-collapse collapse border-0 "
+              aria-labelledby="heading-0c2f829793a1f0562fea97120357dd2d43319164" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">The difference between and premium product consist number of
+                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
+            </div>
+          </div>
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 text-light"
+              id="heading-8fe6730e26db16f15763887c30a614caa075f518" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-8fe6730e26db16f15763887c30a614caa075f518" aria-expanded="false"
+              aria-controls="collapse-8fe6730e26db16f15763887c30a614caa075f518">What is the difference the free
+              versions?
+            </h2>
+            <div id="collapse-8fe6730e26db16f15763887c30a614caa075f518" class="accordion-collapse collapse border-0 "
+              aria-labelledby="heading-8fe6730e26db16f15763887c30a614caa075f518" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">The difference between and premium product consist number of
+                components, plugins, page in each. The Free versions contain only a few elements and pages that.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="shadow rounded py-5 px-4 ms-0 ms-lg-4 bg-dark position-relative">
+          <div class="block mx-0 mx-lg-3 mt-0">
+            <h4 class="h5 text-light">Still Have Questions?</h4>
+            <div class="content">Call Us We Will Be Happy To Help
+              <br> <a href="tel:+3301563965">+3301563965</a>
+              <br>Monday - Friday
+              <br>9AM TO 8PM Eastern Time</div>
+          </div>
+          <div class="block mx-0 mx-lg-3 mt-4">
+            <h4 class="h5 text-light">Canada Office</h4>
+            <div class="content">231 Ross Street.
+              <br>K7A 1C2.
+              <br>Smiths Falls</div>
+          </div>
+          <div class="block mx-0 mx-lg-3 mt-4">
+            <h4 class="h5 text-light">UK Office</h4>
+            <div class="content">57 Folkestone Road.
+              <br>AB54 5XQ,
+              <br>Winston</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="section-sm bg-dark">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Service</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="service-details.html">Personal loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Home Equity Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Student Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Mortgage Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Payday Loans</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">About</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="#!">Benefits</a>
+						</li>
+						<li class="mb-2"><a href="#!">Careers</a>
+						</li>
+						<li class="mb-2"><a href="#!">Our Story</a>
+						</li>
+						<li class="mb-2"><a href="#!">Team</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Help</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="contact.html">Contact Us</a>
+						</li>
+						<li class="mb-2"><a href="faq.html">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 newsletter-form">
+				<div style="background-color: #f8e494; padding: 35px; border-radius: 30px;">
+					<h5 class="mb-4 text-dark font-secondary">Subscribe</h5>
+					<div class="pe-0 pe-xl-5">
+						<form action="#!" method="post" name="mc-embedded-subscribe-form" target="_blank">
+							<div class="input-group mb-3">
+								<input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Email address"> <span class="input-group-text border-0 p-0">
+                    <button class="input-group-text border-0 bg-dark" type="submit" name="subscribe"
+                      aria-label="Subscribe for Newsletter"><i class="fas fa-arrow-right"></i></button>
+                  </span>
+							</div>
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+							</div>
+						</form>
+					</div>
+					<p class="mb-0 text-dark">Lorem ipsum dolor sit amet, rdghds consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mt-5 text-center text-md-start">
+			<div class="col-lg-4">
+        <a href="index.html">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/logo.png" alt="Wallet">
+        </a>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+				<ul class="list-unstyled list-inline mb-0 text-lg-center">
+					<li class="list-inline-item me-4"><a class="text-black" href="privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li class="list-inline-item me-4"><a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+				<ul class="list-unstyled list-inline mb-0 social-icons">
+					<li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- # JS Plugins -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/scrollmenu/scrollmenu.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
