@@ -1331,6 +1331,21 @@
    .col-lg-6 {
      flex: 0 0 auto;
      width: 50%;
+     animation: zoomin 1s linear 1;
+     animation-delay: 5s;
+     visibility: hidden;
+     animation-fill-mode: forwards;
+   }
+
+   @keyframes zoomin{
+    0%{
+      transform: scale(0.5);
+      visibility: visible;
+    }
+    100%{
+      transform: scale(1);
+      visibility: visible;
+    }
    }
    .col-lg-7 {
      flex: 0 0 auto;
@@ -3592,11 +3607,6 @@
    color: #f8e494;
    text-decoration: none;
    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-   animation: movedown 1s linear 1;
-   animation-delay:  3s;
-   visibility: hidden;
-   animation-fill-mode: forwards;
- 
  }
  @media (prefers-reduced-motion: reduce) {
    .nav-link {
@@ -3871,6 +3881,10 @@
    .navbar-expand-xl .navbar-collapse {
      display: flex !important;
      flex-basis: auto;
+     animation: movedown 1s linear 1;
+     animation-delay: 2s;
+     visibility: hidden;
+     animation-fill-mode: forwards;
    }
    .navbar-expand-xl .navbar-toggler {
      display: none;
@@ -7442,7 +7456,7 @@
    }
    .mb-lg-0 {
      margin-bottom: 0 !important;
-   }
+    }
    .mb-lg-1 {
      margin-bottom: 0.25rem !important;
    }
