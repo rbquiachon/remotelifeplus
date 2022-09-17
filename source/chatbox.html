@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Box UI</title>
-    <link rel="stylesheet" href="style2.css">
-    https://www.youtube.com/watch?v=R01_nw3eims
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Level Chat-Box UI</title>
+    <link rel="stylesheet" href="./css/style2.css" />
+  </head>
 
-</head>
-<body>
+  <body>
     <div class="container">
-        <!--chat box-->
-        <div class="chat-box">
-             <!--client-->
-            <div class="client">
-                <img src="logo.png" alt="logo" />
-                <div class="client-info">
-                <h2>Remote Life Plus</h2>
-                <p>online</p>
-                </div>
-                <!--main chat section-->
-                <div class="chats">
-                    <div class="client-chat">Hi!</div>
-                    <div class="my-chat">Hi!</div>
-                    <div class="cliet-chat">How can I help you?</div>
-                    <div class="my-chat">How do you create this?</div>
-                    <div class="client-chat"></div>
-                </div>
-            </div>    
-        </div>    
+      <!-- chat box -->
+      <div class="chat-box">
+        <!-- client -->
+        <div class="client">
+          <img src="./images/logo.png" alt="logo" />
+          <div class="client-info">
+            <h2>Remote Life Plus</h2>
+            <p>online</p>
+          </div>
+        </div>
+
+        <!-- main chat section -->
+        <div class="chats">
+          <div class="client-chat">Hi!</div>
+          <div class="my-chat">Hi!</div>
+          <div class="client-chat">How can i help you?</div>
+          <div class="my-chat">How you create this chat box?</div>
+          <div class="client-chat">Watch complete video for your answer.</div>
+        </div>
+
+        <!-- input field section -->
+        <div class="chat-input">
+          <input type="text" placeholder="Enter Message" />
+          <button class="send-btn">
+            <img src="./images/send.png" alt="send-btn" />
+          </button>
+        </div>
+      </div>
+
+      <!-- button -->
+      <div class="chat-btn">
+        <img src="./images/Circle-icons-chat.svg.png" alt="chat box icon btn" />
+      </div>
     </div>
 
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="script.js"></script>
-    
-</body>
+    <script src="./plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

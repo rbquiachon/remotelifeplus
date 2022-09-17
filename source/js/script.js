@@ -86,3 +86,20 @@ $(window).on("load", function () {
     scrollOffset: 10,
   });
 })(jQuery);
+
+// chat box 
+  $(document).ready(() => {
+    $(".chat-btn").click(() => {
+        $(".chat-box").slideToggle("slow")
+    })
+  })
+
+
+const toggleChatBot=(e)=>{
+  const getChatbot = document.getElementById('chat-box');
+  if(getChatbot.style.display == 'none'){
+    getChatbot.style.display = 'block'
+  }else{
+    getChatbot.style.display = 'none'
+  }
+}
