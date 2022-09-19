@@ -8,35 +8,42 @@
 -->
 
 <html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Remote Life Plus</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+    <meta name="description" content="This is meta description" />
+    <meta name="author" content="Themefisher" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-<head>
-	<meta charset="utf-8">
-	<title>Remote Life Plus</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-	<meta name="description" content="This is meta description">
-	<meta name="author" content="Themefisher">
-	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- # Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- # Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- # CSS Plugins -->
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css" />
+    <link rel="stylesheet" href="plugins/font-awesome/brands.css" />
+    <link rel="stylesheet" href="plugins/font-awesome/solid.css" />
 
-	<!-- # CSS Plugins -->
-	<link rel="stylesheet" href="plugins/slick/slick.css">
-	<link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
-	<link rel="stylesheet" href="plugins/font-awesome/brands.css">
-	<link rel="stylesheet" href="plugins/font-awesome/solid.css">
+    <!-- # Main Style Sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
 
-	<!-- # Main Style Sheet -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-</head>
-
-<body>
-
-<!-- navigation -->
+  <body>
+    <!-- navigation -->
 <header class="navigation">
   <nav class="navbar navbar-expand-xl navbar-dark text-center py-3">
     <div class="container">
@@ -80,7 +87,7 @@
           </li>
         </ul>
         <!-- account btn -->
-      
+
         <!-- account btn -->
         <a href="signup.html" class="btn btn-secondary ms-2 ms-lg-3"
           >Apply Here</a
@@ -113,89 +120,89 @@
       </div>
       <div class="modal-body">
         <div class="row">
-            <div class="col-lg-6 mb-4 pb-2">
-              <div class="form-group">
-                <label for="loan_amount" class="form-label">Full Name</label>
-                <input
-                  type="number"
-                  class="form-control shadow-none"
-                  id="loan_amount"
-                  placeholder=""
-                />
-              </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <div class="form-group">
+              <label for="loan_amount" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control shadow-none"
+                id="loan_amount"
+                placeholder=""
+              />
             </div>
-            <div class="col-lg-6 mb-4 pb-2">
-              <div class="form-group">
-                <label for="loan_how_long_for" class="form-label"
-                  >Virtual Assistant or Medical Virtual Assistant?</label
-                >
-                <input
-                  type="number"
-                  class="form-control shadow-none"
-                  id="loan_how_long_for"
-                  placeholder=""
-                />
-              </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <div class="form-group">
+              <label for="loan_how_long_for" class="form-label"
+                >Virtual Assistant or Medical Virtual Assistant?</label
+              >
+              <input
+                type="text"
+                class="form-control shadow-none"
+                id="loan_how_long_for"
+                placeholder=""
+              />
             </div>
-            <div class="col-lg-12 mb-4 pb-2">
-              <div class="form-group">
-                <label for="loan_repayment" class="form-label"
-                  >How long are you planning on using the service?</label
-                >
-                <input
-                  type="number"
-                  class="form-control shadow-none"
-                  id="loan_repayment"
-                  disabled
-                />
-              </div>
+          </div>
+          <div class="col-lg-12 mb-4 pb-2">
+            <div class="form-group">
+              <label for="loan_repayment" class="form-label">Duration</label>
+              <input
+                type="text"
+                class="form-control shadow-none"
+                id="loan_full_name"
+              />
             </div>
-            <div class="col-lg-6 mb-4 pb-2">
-              <div class="form-group">
-                <label for="loan_full_name" class="form-label"
-                  >Name of your Organization or Business</label
-                >
-                <input
-                  type="text"
-                  class="form-control shadow-none"
-                  id="loan_full_name"
-                />
-              </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <div class="form-group">
+              <label for="loan_full_name" class="form-label"
+                >Name of your Organization or Business</label
+              >
+              <input
+                type="text"
+                class="form-control shadow-none"
+                id="loan_full_name"
+              />
             </div>
-            <div class="col-lg-6 mb-4 pb-2">
-              <div class="form-group">
-                <label for="loan_full_name" class="form-label"
-                  >Phone Number</label
-                >
-                <input
-                  type="text"
-                  class="form-control shadow-none"
-                  id="loan_full_name"
-                />
-              </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <div class="form-group">
+              <label for="loan_full_name" class="form-label"
+                >Phone Number</label
+              >
+              <input
+                type="number"
+                class="form-control shadow-none"
+                id="loan_full_name"
+              />
             </div>
-            <div class="col-lg-6 mb-4 pb-2">
-              <div class="form-group">
-                <label for="loan_email_address" class="form-label"
-                  >Business Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control shadow-none"
-                  id="loan_email_address"
-                />
-              </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <div class="form-group">
+              <label for="loan_email_address" class="form-label"
+                >Business Email Address</label
+              >
+              <input
+                type="email"
+                class="form-control shadow-none"
+                id="email_address"
+              />
             </div>
-            <div class="col-lg-12">
-              <button type="submit" class="btn btn-primary w-100">
-                Start Your Free Trial Now
-              </button>
-            </div>
+          </div>
+          <div class="col-lg-12">
+            <button type="submit" class="btn btn-primary w-100">
+              Start Your Free Trial Now
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+  </body>
+</html>
 
 
 <section class="section">
