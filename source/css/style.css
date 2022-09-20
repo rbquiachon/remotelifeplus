@@ -6256,7 +6256,7 @@ fieldset:disabled .btn {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #f8e494 !important;
+  color: #f5d864 !important;
 }
 
 .text-secondary {
@@ -8974,7 +8974,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   font-weight: 400;
-  color: #565e64;
+  color: #ffd75fe6;
 }
 
 p,
@@ -9266,7 +9266,11 @@ a:hover {
 }
 
 .text-primary {
-  color: #f8e494 !important;
+  color: #f3cc599e!important;
+}
+
+.text-secondary {
+  color:#c5af6b !important;
 }
 
 .text-black {
